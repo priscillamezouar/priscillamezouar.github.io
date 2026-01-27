@@ -1,0 +1,41 @@
+@use "settings";
+
+#hero {
+    background: url(../images/hero.webp) center/cover;
+    .container {
+        background: settings.$whiteOverlay;
+        padding: 50px;
+        box-shadow: 0 0 5px settings.$blackShadow;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+
+        h1,
+        h2 {
+            font-weight: normal;
+        }
+
+        h1 {
+            padding-bottom: 50px;
+            border-bottom: 1px solid settings.$color1;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        b {
+            font-weight: bold;
+        }
+
+        .buttons-hero {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}

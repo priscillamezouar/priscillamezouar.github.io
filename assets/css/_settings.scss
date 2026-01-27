@@ -1,0 +1,79 @@
+// ======
+// COLORS
+// ======
+$color1: #44515c;
+$text: #333;
+$black: #000;
+$blackShadow: rgba(0, 0, 0, 0.4);
+$white: #fff;
+$whiteOverlay: rgba(255, 255, 255, 0.6);
+$border: #c9cfd2;
+
+// =====
+// FONTS
+// =====
+$bodyFont:
+    "Inter", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+$headingFont:
+    "Inter", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+// =======
+// GENERAL
+// =======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+    cursor: default;
+    font-size: 16px;
+    font-weight: 300;
+    user-select: none;
+    font-family: $bodyFont;
+    color: $text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color1;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+
+    * {
+        cursor: pointer;
+    }
+}
+
+section {
+    padding: 50px;
+}
+
+.img {
+    box-shadow: 0 0 5px $blackShadow;
+    width: 100%;
+    border-radius: 5px;
+}

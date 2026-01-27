@@ -1,0 +1,19 @@
+@use "settings";
+
+button {
+    border: 1px solid settings.$color1;
+    border-radius: 3px;
+    background: settings.$color1;
+    padding: 5px 30px;
+    color: settings.$white;
+    font-weight: normal;
+
+    &:hover {
+        box-shadow: inset 0 0 10px settings.$black;
+    }
+}
+
+.button2 {
+    background: settings.$whiteOverlay;
+    color: settings.$color1;
+}

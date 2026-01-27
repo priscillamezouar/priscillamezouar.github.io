@@ -1,0 +1,55 @@
+@use "settings";
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-shadow: 0 0 10px settings.$blackShadow;
+
+    .logo {
+        max-height: 50px;
+    }
+
+    .iconsNav {
+        display: none;
+
+        @media screen and (max-width: 992px) {
+            display: block;
+        }
+
+        i {
+            font-size: 25px;
+        }
+
+        #closeIcon {
+            display: none;
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+
+        @media screen and (max-width: 992px) {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            // margin-top: 20px;
+            padding: 50px;
+            border-top: 1px solid settings.$border;
+        }
+
+        a {
+            font-weight: normal;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
