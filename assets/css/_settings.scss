@@ -3,6 +3,7 @@
 // ======
 $color1: #44515c;
 $text: #333;
+$textLight: #c9cfd2;
 $black: #000;
 $blackShadow: rgba(0, 0, 0, 0.4);
 $white: #fff;
@@ -66,6 +67,10 @@ a {
     * {
         cursor: pointer;
     }
+}
+
+p {
+    line-height: 30px;
 }
 
 section {
