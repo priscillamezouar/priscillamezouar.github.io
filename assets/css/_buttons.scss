@@ -1,8 +1,8 @@
 @use "settings";
 
 button {
-    border: 1px solid settings.$color1;
-    border-radius: 3px;
+    border: 2px solid settings.$color1;
+    border-radius: 50px;
     background: settings.$color1;
     padding: 5px 30px;
     color: settings.$white;
@@ -14,11 +14,12 @@ button {
 }
 
 .button2 {
-    background: settings.$whiteOverlay;
+    background: transparent;
     color: settings.$color1;
 }
 
 .button3 {
     background: settings.$white;
     color: settings.$color1;
+    border: 2px solid settings.$white;
 }

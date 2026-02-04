@@ -20,9 +20,18 @@ footer {
         * {
             font-size: 12px;
         }
+
+        a {
+            text-transform: uppercase;
+
+            &:hover {
+                color: settings.$color1;
+            }
+        }
     }
 
     i {
+        color: settings.$color1;
         font-size: 20px;
         margin: 0 5px;
     }

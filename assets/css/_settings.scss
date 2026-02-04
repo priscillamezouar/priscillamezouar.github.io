@@ -1,23 +1,23 @@
 // ======
 // COLORS
 // ======
-$color1: #44515c;
+$color1: #ff2776;
 $text: #333;
 $textLight: #c9cfd2;
 $black: #000;
 $blackShadow: rgba(0, 0, 0, 0.4);
 $white: #fff;
-$whiteOverlay: rgba(255, 255, 255, 0.6);
-$border: #c9cfd2;
+$blackOverlay: rgba(0, 0, 0, 0.9);
+$bg: #f1f1f1;
 
 // =====
 // FONTS
 // =====
 $bodyFont:
-    "Inter", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 $headingFont:
-    "Inter", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 
 // =======
@@ -31,7 +31,7 @@ $headingFont:
     cursor: default;
     font-size: 16px;
     font-weight: 300;
-    user-select: none;
+    // user-select: none;
     font-family: $bodyFont;
     color: $text;
 }
@@ -43,7 +43,7 @@ h4,
 h5,
 h6 {
     color: $color1;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
@@ -62,7 +62,7 @@ h3 {
 a {
     cursor: pointer;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
 
     * {
         cursor: pointer;
@@ -80,5 +80,5 @@ section {
 .img {
     box-shadow: 0 0 5px $blackShadow;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }

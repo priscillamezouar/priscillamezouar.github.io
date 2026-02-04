@@ -3,31 +3,28 @@
 #hero {
     background: url(../images/hero.webp) center/cover;
     .container {
-        background: settings.$whiteOverlay;
+        background: settings.$blackOverlay;
         padding: 50px;
         box-shadow: 0 0 5px settings.$blackShadow;
-        border-radius: 5px;
+        border-radius: 10px;
         display: flex;
         flex-direction: column;
         gap: 50px;
         text-align: center;
 
-        h1,
-        h2 {
-            font-weight: normal;
+        img {
+            max-width: 20%;
+            margin: 0 auto;
         }
 
         h1 {
-            padding-bottom: 50px;
-            border-bottom: 1px solid settings.$color1;
+            font-weight: normal;
+            // padding-top: 50px;
+            // border-top: 1px solid settings.$color1;
         }
 
-        h2 {
-            font-size: 20px;
-        }
-
-        b {
-            font-weight: bold;
+        p {
+            color: settings.$white;
         }
 
         .buttons-hero {
@@ -41,7 +38,7 @@
 }
 
 #a-propos {
-    background: settings.$color1;
+    background: settings.$black;
 
     .container {
         display: grid;
@@ -59,12 +56,14 @@
         }
 
         h2 {
-            color: settings.$white;
+            &:last-of-type {
+                margin-top: 30px;
+            }
         }
 
         p,
         li {
-            color: settings.$textLight;
+            color: settings.$white;
         }
 
         div {
@@ -95,21 +94,17 @@
 }
 
 #competences {
-    background: settings.$color1;
+    background: settings.$black;
     display: flex;
     flex-direction: column;
     gap: 50px;
     flex-wrap: wrap;
 
-    h2 {
-        color: settings.$white;
-    }
-
     .item {
         background: settings.$white;
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 50px;
+        grid-template-columns: 2fr 3fr;
+        gap: 20px;
         align-items: center;
         border-radius: 5px;
         box-shadow: 0 0 5px settings.$blackShadow;
@@ -122,6 +117,7 @@
 
         img {
             width: 100%;
+            height: 100%;
             border-radius: 5px 0 0 5px;
 
             @media screen and (max-width: 992px) {
@@ -175,6 +171,7 @@
             border-radius: 5px;
             box-shadow: 0 0 5px settings.$blackShadow;
             height: 100%;
+            background: settings.$bg;
 
             img {
                 width: 100%;
@@ -188,7 +185,7 @@
                 flex-direction: column;
                 flex-wrap: wrap;
                 gap: 20px;
-                border-top: 1px solid settings.$border;
+                // border-top: 1px solid settings.$border;
             }
         }
     }
@@ -199,14 +196,10 @@
     flex-direction: column;
     gap: 50px;
     flex-wrap: wrap;
-    background: settings.$color1;
-
-    h2 {
-        color: settings.$white;
-    }
+    background: settings.$black;
 
     p {
-        color: settings.$textLight;
+        color: settings.$white;
     }
 
     .buttons-contact {
@@ -217,7 +210,8 @@
 
         button {
             i {
-                margin-right: 5px;
+                color: settings.$white;
+                margin-right: 10px;
             }
         }
     }

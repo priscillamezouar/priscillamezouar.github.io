@@ -1,6 +1,7 @@
 @use "settings";
 
 header {
+    background: settings.$black;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -11,6 +12,10 @@ header {
 
     .logo {
         max-height: 50px;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     .iconsNav {
@@ -22,6 +27,7 @@ header {
 
         i {
             font-size: 25px;
+            color: settings.$white;
         }
 
         #closeIcon {
@@ -41,14 +47,16 @@ header {
             width: 100%;
             // margin-top: 20px;
             padding: 50px;
-            border-top: 1px solid settings.$border;
+            border-top: 1px solid settings.$color1;
         }
 
         a {
             font-weight: normal;
+            color: settings.$white;
 
             &:hover {
-                font-weight: bold;
+                color: settings.$color1;
+                transform: scale(1.05);
             }
         }
     }
