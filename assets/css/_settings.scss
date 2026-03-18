@@ -1,0 +1,63 @@
+// COLORS
+$color1: #ff2776;
+$color1Overlay: rgba(255, 39, 118, 0.1);
+$black: #000;
+$blackShadow: rgba(0, 0, 0, 0.4);
+$white: #fff;
+$border: #545454;
+$bg: #151515;
+$bg2: #eaeaea;
+$text: #151515;
+$text2: #5b5b5b;
+$textLight: #eaeaea;
+$grey: #2d2d2d;
+
+// FONTS
+$bodyFont:
+    "Inter", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+$codeFont:
+    "JetBrains Mono", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+// GENERAL
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $bodyFont;
+    font-size: 16px;
+    transition: 0.2s ease;
+    color: $text;
+    user-select: none;
+}
+
+h1 {
+    font-size: 45px;
+    color: $textLight !important;
+
+    span {
+        font-size: 45px;
+        text-transform: uppercase;
+        color: $color1;
+    }
+}
+
+h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid $color1;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+    * {
+        cursor: pointer;
+    }
+}
+
+p {
+    line-height: 30px;
+}

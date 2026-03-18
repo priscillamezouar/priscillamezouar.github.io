@@ -1,0 +1,71 @@
+@use "settings";
+
+#competences {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 100px;
+
+    @media screen and (max-width: 576px) {
+        padding: 50px 15px;
+    }
+
+    .items-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        width: 100%;
+
+        @media screen and (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+
+        .item {
+            background: settings.$bg2;
+            box-shadow: 0 0 5px settings.$blackShadow;
+            padding: 50px;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+
+            i {
+                padding: 5px;
+                font-size: 20px;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background: settings.$black;
+                color: settings.$color1;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            ul {
+                list-style-position: inside;
+
+                li {
+                    padding-bottom: 10px;
+
+                    &:last-of-type {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
