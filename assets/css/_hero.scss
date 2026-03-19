@@ -64,6 +64,8 @@
                 box-shadow: 0 0 10px settings.$black;
                 width: 100%;
                 filter: drop-shadow(0 0 10px settings.$black);
+                background: settings.$white;
+
                 @media screen and (max-width: 992px) {
                     width: 80%;
                     max-width: 300px;

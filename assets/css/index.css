@@ -312,6 +312,7 @@ footer .copyright a:hover {
   box-shadow: 0 0 10px #000;
   width: 100%;
   filter: drop-shadow(0 0 10px #000);
+  background: #fff;
 }
 @media screen and (max-width: 992px) {
   #hero .container .img-container img {
