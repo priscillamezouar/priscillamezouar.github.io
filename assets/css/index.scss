@@ -1,0 +1,17 @@
+@use "settings";
+
+// GENERAL
+@use "buttons";
+@use "status";
+@use "header";
+@use "footer";
+@use "call";
+
+// HOME
+@use "hero";
+@use "a-propos";
+@use "formation";
+@use "competences";
+
+// PORTFOLIO
+@use "portfolio";

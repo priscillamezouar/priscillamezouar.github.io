@@ -1,0 +1,103 @@
+@use "settings";
+
+footer {
+    background: settings.$bg;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+
+    text-align: center;
+
+    @media screen and (max-width: 576px) {
+        padding: 50px 15px;
+    }
+
+    * {
+        color: settings.$textLight !important;
+    }
+
+    h2 {
+        border-bottom: none;
+        padding: 0;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .items-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid settings.$border;
+        width: 100%;
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid settings.$border;
+            text-align: justify;
+
+            @media screen and (max-width: 576px) {
+                width: 100%;
+            }
+            &:hover {
+                border: 1px solid settings.$color1;
+
+                h3 {
+                    color: settings.$color1 !important;
+                }
+            }
+
+            i {
+                padding: 5px;
+                font-size: 20px;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background: settings.$color1Overlay;
+                color: settings.$color1 !important;
+                text-shadow: 0 0 5px settings.$black;
+            }
+
+            h3 {
+                font-family: settings.$codeFont;
+                text-transform: uppercase;
+                font-size: 14px;
+                color: settings.$border !important;
+            }
+
+            p {
+                font-weight: bold;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .copyright {
+        font-size: 12px;
+        text-transform: uppercase;
+
+        a {
+            font-size: 12px;
+            font-weight: bold;
+
+            &:hover {
+                color: settings.$color1 !important;
+            }
+        }
+    }
+}

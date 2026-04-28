@@ -1,0 +1,128 @@
+@use "settings";
+
+#portfolio {
+    padding: 100px;
+
+    @media screen and (max-width: 576px) {
+        padding: 100px 15px 50px;
+    }
+
+    h1 {
+        color: settings.$text !important;
+        padding-bottom: 50px;
+    }
+
+    .intro {
+        padding-bottom: 50px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 50px;
+
+        h2 {
+            border: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: settings.$color1Overlay;
+                border: 1px solid settings.$color1;
+                padding: 10px;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+                color: settings.$color1;
+            }
+        }
+
+        .items-container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            @media screen and (max-width: 1200px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media screen and (max-width: 992px) {
+                // grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .item {
+                border: 1px solid settings.$border;
+                border-radius: 10px;
+                box-shadow: 0 0 5px settings.$blackShadow;
+                position: relative;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    border-radius: 10px 10px 0 0;
+                    border-bottom: 1px solid settings.$border;
+                }
+
+                .text-item {
+                    padding: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .category {
+                        font-size: 12px;
+                        background: settings.$color1;
+                        padding: 5px;
+                        border: 1px solid settings.$color1;
+                        color: settings.$white;
+                        border-radius: 50px;
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                    }
+
+                    p,
+                    a {
+                        color: settings.$text2;
+                        font-size: 12px;
+                    }
+
+                    a {
+                        font-weight: bold;
+                    }
+
+                    ul {
+                        display: flex;
+                        gap: 20px;
+                        align-items: center;
+                        list-style: none;
+
+                        li {
+                            font-size: 12px;
+                            // background: settings.$blackShadow;
+                            color: settings.$color1;
+                            padding: 5px;
+                            border: 1px solid settings.$color1;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

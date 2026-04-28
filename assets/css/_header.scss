@@ -1,0 +1,69 @@
+@use "settings";
+
+header {
+    background: settings.$bg;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 100px;
+    border-bottom: 1px solid settings.$border;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999999999999999;
+
+    @media screen and (max-width: 992px) {
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    // @media screen and (max-width: 576px) {
+    //     position: initial;
+    // }
+
+    .logo {
+        max-height: 30px;
+    }
+
+    .iconsNav {
+        display: none;
+        cursor: pointer;
+        @media screen and (max-width: 992px) {
+            display: block;
+        }
+
+        i {
+            font-size: 25px;
+            color: settings.$white;
+        }
+
+        #closeNav {
+            display: none;
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+
+        @media screen and (max-width: 992px) {
+            display: none;
+            flex-direction: column;
+            width: 100vw;
+            padding-top: 30px;
+            border-top: 1px solid settings.$color1;
+        }
+
+        a {
+            color: settings.$white;
+
+            &:hover {
+                color: settings.$color1;
+            }
+        }
+    }
+}

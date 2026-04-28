@@ -1,0 +1,81 @@
+@use "settings";
+
+#formation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 100px;
+    background: settings.$bg2;
+
+    @media screen and (max-width: 576px) {
+        padding: 50px 15px;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .items-container {
+        border-left: 2px solid settings.$border;
+        padding-left: 50px;
+        width: 100%;
+
+        @media screen and (max-width: 576px) {
+            padding-left: 20px;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 50px;
+
+            &:first-of-type {
+                span {
+                    color: settings.$color1;
+                }
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            span {
+                font-size: 16px;
+                font-family: settings.$codeFont;
+                color: settings.$border;
+                text-transform: uppercase;
+                font-weight: bold;
+
+                &:before {
+                    font-size: 20px;
+                    content: "\2609";
+                }
+            }
+
+            h3,
+            h4,
+            p {
+                margin-left: 20px;
+            }
+
+            h3 {
+                font-size: 20px;
+                color: settings.$black;
+            }
+
+            h4 {
+                color: settings.$border;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 16px;
+                font-style: italic;
+            }
+        }
+    }
+}

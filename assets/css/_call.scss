@@ -1,0 +1,13 @@
+@use "settings";
+
+.call {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    &:hover {
+        background: settings.$color1;
+        box-shadow: 0 0 5px settings.$black;
+        color: settings.$white !important;
+    }
+}
