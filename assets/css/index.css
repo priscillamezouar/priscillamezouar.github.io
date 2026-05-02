@@ -19,13 +19,13 @@ h1 {
 h1 span {
   font-size: 45px;
   text-transform: uppercase;
-  color: #dc143c;
+  color: #d73e68;
 }
 
 h2 {
   font-size: 30px;
   padding-bottom: 20px;
-  border-bottom: 5px solid #dc143c;
+  border-bottom: 5px solid #d73e68;
 }
 
 a {
@@ -41,7 +41,7 @@ p {
 }
 
 .button1 {
-  background: #dc143c;
+  background: #d73e68;
   border: 1px solid transparent;
   padding: 10px 20px;
   border-radius: 5px;
@@ -50,16 +50,16 @@ p {
   margin: 10px 0;
 }
 .button1:hover {
-  background: rgba(255, 39, 118, 0.1);
-  color: #dc143c;
+  background: rgba(215, 62, 104, 0.1);
+  color: #d73e68;
   text-shadow: 0 0 5px #000;
   box-shadow: inset 0 0 5px #000;
-  border: 1px solid #dc143c;
+  border: 1px solid #d73e68;
 }
 
 .button2 {
-  background: rgba(255, 39, 118, 0.1);
-  border: 1px solid #dc143c;
+  background: rgba(215, 62, 104, 0.1);
+  border: 1px solid #d73e68;
   padding: 10px 20px;
   border-radius: 5px;
   color: #fff !important;
@@ -68,21 +68,21 @@ p {
   margin: 10px 0;
 }
 .button2:hover {
-  background: #dc143c;
+  background: #d73e68;
   box-shadow: 0 0 5px #000;
-  border: 1px solid #dc143c;
+  border: 1px solid #d73e68;
   text-shadow: none;
 }
 
 .status {
   font-size: 14px;
-  border: 1px solid #dc143c;
+  border: 1px solid #d73e68;
   font-family: "JetBrains Mono", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-transform: uppercase;
   border-radius: 5px;
   padding: 5px;
-  background: rgba(255, 39, 118, 0.1);
-  color: #dc143c !important;
+  background: rgba(215, 62, 104, 0.1);
+  color: #d73e68 !important;
   box-shadow: inset 0 0 5px #000;
 }
 
@@ -137,14 +137,14 @@ header nav {
     flex-direction: column;
     width: 100vw;
     padding-top: 30px;
-    border-top: 1px solid #dc143c;
+    border-top: 1px solid #d73e68;
   }
 }
 header nav a {
   color: #fff;
 }
 header nav a:hover {
-  color: #dc143c;
+  color: #d73e68;
 }
 
 footer {
@@ -198,10 +198,10 @@ footer .items-container .item {
   }
 }
 footer .items-container .item:hover {
-  border: 1px solid #dc143c;
+  border: 1px solid #d73e68;
 }
 footer .items-container .item:hover h3 {
-  color: #dc143c !important;
+  color: #d73e68 !important;
 }
 footer .items-container .item i {
   padding: 5px;
@@ -212,8 +212,8 @@ footer .items-container .item i {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: rgba(255, 39, 118, 0.1);
-  color: #dc143c !important;
+  background: rgba(215, 62, 104, 0.1);
+  color: #d73e68 !important;
   text-shadow: 0 0 5px #000;
 }
 footer .items-container .item h3 {
@@ -235,7 +235,7 @@ footer .copyright a {
   font-weight: bold;
 }
 footer .copyright a:hover {
-  color: #dc143c !important;
+  color: #d73e68 !important;
 }
 
 .call {
@@ -244,7 +244,7 @@ footer .copyright a:hover {
   right: 20px;
 }
 .call:hover {
-  background: #dc143c;
+  background: #d73e68;
   box-shadow: 0 0 5px #000;
   color: #fff !important;
 }
@@ -307,7 +307,7 @@ footer .copyright a:hover {
   justify-content: center;
 }
 #hero .container .img-container img {
-  border: 2px solid #dc143c;
+  border: 2px solid #d73e68;
   border-radius: 100%;
   box-shadow: 0 0 10px #000;
   width: 100%;
@@ -377,7 +377,7 @@ footer .copyright a:hover {
   margin-bottom: 50px;
 }
 #formation .items-container .item:first-of-type span {
-  color: #dc143c;
+  color: #d73e68;
 }
 #formation .items-container .item:last-of-type {
   margin-bottom: 0;
@@ -463,7 +463,7 @@ footer .copyright a:hover {
   align-items: center;
   border-radius: 50%;
   background: #000;
-  color: #dc143c;
+  color: #d73e68;
 }
 #competences .items-container .item h3 {
   font-size: 18px;
@@ -510,14 +510,14 @@ footer .copyright a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 39, 118, 0.1);
-  border: 1px solid #dc143c;
+  background: rgba(215, 62, 104, 0.1);
+  border: 1px solid #d73e68;
   padding: 10px;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   font-size: 25px;
-  color: #dc143c;
+  color: #d73e68;
 }
 #portfolio section .items-container {
   width: 100%;
@@ -557,9 +557,9 @@ footer .copyright a:hover {
 }
 #portfolio section .items-container .item .text-item .category {
   font-size: 12px;
-  background: #dc143c;
+  background: #d73e68;
   padding: 5px;
-  border: 1px solid #dc143c;
+  border: 1px solid #d73e68;
   color: #fff;
   border-radius: 50px;
   position: absolute;
@@ -585,8 +585,8 @@ footer .copyright a:hover {
 }
 #portfolio section .items-container .item .text-item ul li {
   font-size: 12px;
-  color: #dc143c;
+  color: #d73e68;
   padding: 5px;
-  border: 1px solid #dc143c;
+  border: 1px solid #d73e68;
   border-radius: 50px;
 }/*# sourceMappingURL=index.css.map */
